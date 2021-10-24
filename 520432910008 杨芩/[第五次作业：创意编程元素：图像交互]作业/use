@@ -1,4 +1,4 @@
-Button[] bt; 
+Button[] bt;
 
 float speed = 0;
 float easing = 0.07;
@@ -15,7 +15,7 @@ void setup() {
   bt = new Button[4];
   smooth();
 
-// make the different color for each button
+  // make the different color for each button
   for (int i = 0; i < bt.length; i ++) {
     color cc = color(random(255), random(255), random(255));
     bt[i] = new Button(20+(btWidth+10)*i, 30, btWidth, btHeight, cc);
@@ -42,7 +42,7 @@ void draw() {
     rect(0, 0, width, height);
   }
 
-// show the button and reach the color
+  // show the button and reach the color
   for (int i = 0; i < bt.length; i ++) {
     bt[i].showButton();
     if (bt[i].pickColor) {
@@ -57,7 +57,7 @@ void draw() {
 
 
 void brush1() {
-  
+
   //make a ellipse and a circle.
   //the speed of the mouse makes it different
   float target = dist(mouseX, mouseY, pmouseX, pmouseY);
@@ -76,7 +76,7 @@ void brush1() {
 
 
 void brush2() {
-  
+
   //some ellipses and lines
   if (mousePressed) {
     float speed=0.1;
@@ -115,7 +115,7 @@ void brush3() {
 
 
 void clearButton() {
-  
+
   //clear the canvas
   boolean hover=false;
   float ww =  btWidth*2.2;
@@ -189,6 +189,52 @@ void brushButton() {
       textSize(18);
       fill(0);
       text("Background", 255, 72);
+    }
+  }
+}
+
+
+
+
+
+
+// class
+class Button {
+  float posX, posY;
+  float buttonWidth, buttonHeight;
+  color buttonColor;
+  boolean pickColor;
+
+  Button(float x, float y, float w, float h, color c) {
+    posX = x;
+    posY = y;
+    buttonWidth = w;
+    buttonHeight = h;
+    buttonColor = c;
+  }
+
+  void showButton() {
+    if (hover()) {
+      stroke(255);
+      strokeWeight(2);
+    } else {
+      noStroke();
+    }
+    if (mousePressed && hover()) {
+      pickColor = true;
+      fill(buttonColor, 100);
+    } else {
+      fill(buttonColor);
+    }
+    rect(posX, posY, buttonWidth, buttonHeight);
+  }
+
+  boolean hover() {
+    if (mouseX < posX + buttonWidth && mouseX > posX &&
+      mouseY < posY + buttonHeight && mouseY > posY) {
+      return true;
+    } else {
+      return false;
     }
   }
 }

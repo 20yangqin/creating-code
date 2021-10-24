@@ -8,6 +8,8 @@
 
 ✏️使用readme.md进行作业介绍与说明，可通过图文等形式丰富readme.md中的内容
 
+
+
 可实现功能：
 - 调换3种笔刷，笔刷效果与鼠标移动速度有关
 - 选择随机的四种颜色进行绘图
@@ -17,6 +19,8 @@
 初始界面
 
 ![初始界面](https://user-images.githubusercontent.com/90942805/138600426-78e44f0e-df56-4c30-9abd-385eea9e737b.png)
+
+
 
 笔刷1
 ![brush1](https://user-images.githubusercontent.com/90942805/138600432-88cad420-cc99-491e-8b87-6e6ec5d16a01.png)

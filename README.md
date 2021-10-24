@@ -21,8 +21,8 @@
 ![初始界面](https://user-images.githubusercontent.com/90942805/138600426-78e44f0e-df56-4c30-9abd-385eea9e737b.png)
 
 
-
 笔刷1
+
 ![brush1](https://user-images.githubusercontent.com/90942805/138600432-88cad420-cc99-491e-8b87-6e6ec5d16a01.png)
 
 

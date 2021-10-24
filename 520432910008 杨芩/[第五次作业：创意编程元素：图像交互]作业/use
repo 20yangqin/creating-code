@@ -12,7 +12,7 @@ float target = dist(mouseX, mouseY, pmouseX, pmouseY);
 void setup() {
   size(800, 800);
   background(0);
-  bt = new Button[4];
+  bt = new Button[5];
   smooth();
 
   // make the different color for each button

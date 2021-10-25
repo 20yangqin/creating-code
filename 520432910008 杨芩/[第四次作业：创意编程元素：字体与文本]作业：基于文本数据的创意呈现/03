@@ -1,0 +1,33 @@
+PFont f;
+float angleRate=0.0;
+
+void setup() {
+  size(800, 800);
+  background(0);
+
+  f = createFont("Arial", 80);
+  textFont(f);
+}
+
+void draw() {
+  fill(0, 12);
+  rect(0, 0, width, height);
+  if(mouseX  < width/2){
+    textRotate();
+  }else{
+ 
+  }
+
+
+}
+
+void textRotate(){
+  pushMatrix();
+  translate( width/2, height/2);
+  rotate(radians(angleRate));
+  fill(0, 408, 612);
+  text("SO COLD" , 0 , 0);
+  popMatrix();
+  angleRate += 0.2;
+  
+}

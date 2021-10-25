@@ -1,6 +1,7 @@
 ## 第四次作业
 
 # 01
+- 效果图
 
 ![string1](https://user-images.githubusercontent.com/90942805/138619414-3fde5d81-1ebc-4aff-83f6-0c9949a24866.png)
 
@@ -24,6 +25,7 @@
 
 
 # 03
+
 - 效果图
 
 效果图1
@@ -43,3 +45,16 @@
 1. 文本旋转
 2. 点击左侧画布，文本旋转速度加快
 3. 点击右侧画布，文本消失
+
+# 04
+
+- 效果图
+
+效果图1
+
+![string4](https://user-images.githubusercontent.com/90942805/138619898-2fc47015-1d48-4f3f-a98f-4376ed718837.png)
+
+效果图2
+
+![string4 1](https://user-images.githubusercontent.com/90942805/138619904-a28ddf7d-9693-4442-9968-51f7f48cda21.png)
+
